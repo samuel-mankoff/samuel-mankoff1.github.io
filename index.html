@@ -184,7 +184,7 @@
         <span>2024 - 2026</span>
       </div>
 
-      <div class="grid-3">
+      <!-- <div class="grid-3">
         
         <a href="https://zhenga1.github.io/vr-teleop-robotics/" target="_blank" class="card">
           <img src="images/teleop_thumb.png" alt="VR Teleop" class="project-image">
@@ -208,7 +208,7 @@
           <p>Trained RL policies for a quadruped robot to recover from extreme ground velocity surges (simulated earthquakes) and external pushes.</p>
         </a>
 
-        <a href="#" class="card">
+        <!-- <a href="#" class="card">
           <img src="images/quad_land_thumb.png" alt="MPC Drone" class="project-image">
           <div class="tag-row">
             <span class="pill accent">Optimal Control</span>
@@ -217,9 +217,19 @@
           </div>
           <h3>Nonlinear MPC for Drones</h3>
           <p>Designed a Nonlinear Model Predictive Controller to autonomously dock a quadcopter onto a moving delivery truck under wind constraints.</p>
+        </a> 
+        <a href="MPC_Report.pdf" target="_blank" class="card">
+          <img src="images/quad_land_thumb.png" alt="MPC Drone" class="project-image">
+          <div class="tag-row">
+            <span class="pill accent">Optimal Control</span>
+            <span class="pill">Pyomo</span>
+            <span class="pill">Report PDF</span>
+          </div>
+          <h3>Nonlinear MPC for Drones</h3>
+          <p>Designed a Nonlinear Model Predictive Controller to autonomously dock a quadcopter onto a moving delivery truck. Click to view the technical report.</p>
         </a>
 
-        <a href="#" class="card">
+        <!-- <a href="#" class="card">
           <img src="images/abaqus_thumbnail.png" alt="Abaqus VUMAT" class="project-image">
           <div class="tag-row">
             <span class="pill accent">Fortran</span>
@@ -228,6 +238,17 @@
           </div>
           <h3>Constitutive Modeling (VUMAT)</h3>
           <p>Derived and implemented custom finite-strain thermoelasticity subroutines in Fortran for high-speed impact simulations.</p>
+        </a> 
+
+        <a href="VUMAT_Report.pdf" target="_blank" class="card">
+          <img src="images/abaqus_thumbnail.png" alt="Abaqus VUMAT" class="project-image">
+          <div class="tag-row">
+            <span class="pill accent">Fortran</span>
+            <span class="pill">Abaqus</span>
+            <span class="pill">Report PDF</span>
+          </div>
+          <h3>Constitutive Modeling (VUMAT)</h3>
+          <p>Derived and implemented custom finite-strain thermoelasticity subroutines in Fortran. Click to read the full analysis report.</p>
         </a>
 
         <a href="#" class="card">
@@ -241,6 +262,108 @@
           <p>Implemented a cascaded PID controller and state estimator in C++ on a microcontroller for obstacle course navigation.</p>
         </a>
 
+      </div> -->
+
+                 <div class="grid-3">
+          
+          <a href="https://zhenga1.github.io/vr-teleop-robotics/" target="_blank" class="card">
+            <img src="images/teleop_thumb.png" alt="VR Teleop" class="project-image">
+            <div class="tag-row">
+              <span class="pill accent">ROS 2</span>
+              <span class="pill">Python</span>
+              <span class="pill">Hardware</span>
+            </div>
+            <h3>VR Teleoperation for LfD</h3>
+            <p>Architected a real-time teleoperation pipeline (<100ms latency) bridging a Meta Quest 3 and UR7e arm.</p>
+          </a>
+        
+          <div class="card">
+            <img src="images/unitree_thumbnail.png" alt="Unitree RL" class="project-image">
+            <div class="tag-row">
+              <span class="pill accent">RL</span>
+              <span class="pill">MuJoCo</span>
+              <span class="pill">PyTorch</span>
+            </div>
+            <h3>Seismic Stability (Unitree Go1)</h3>
+            <p>Trained RL policies for a quadruped to recover from ground velocity surges. Based on mjlab framework.</p>
+            <div style="margin-top:12px; display:flex; gap:10px;">
+              <a href="[PASTE_YOUR_GOOGLE_SLIDES_LINK_HERE]" target="_blank" class="pill brand" style="text-decoration:none;">View Slides ↗</a>
+            </div>
+          </div>
+        
+          <div class="card">
+            <img src="images/quad_land_thumb.png" alt="MPC Drone" class="project-image">
+            <div class="tag-row">
+              <span class="pill accent">Optimal Control</span>
+              <span class="pill">Pyomo</span>
+            </div>
+            <h3>Nonlinear MPC for Drones</h3>
+            <p>Designed a Nonlinear MPC to autonomously dock a quadcopter onto a moving delivery truck.</p>
+            <div style="margin-top:12px; display:flex; gap:10px;">
+              <a href="MPC_Report.pdf" target="_blank" class="pill brand" style="text-decoration:none;">Read Report 📄</a>
+              <a href="MPC_Code.ipynb" target="_blank" class="pill accent" style="text-decoration:none; color:var(--bg);">View Code (Colab) 💻</a>
+            </div>
+          </div>
+        
+          <div class="card">
+            <img src="images/unitree_thumbnail.png" alt="Cassie Robot" class="project-image"> 
+            <div class="tag-row">
+              <span class="pill accent">MATLAB</span>
+              <span class="pill">Controls</span>
+            </div>
+            <h3>Cassie Robot Stabilization</h3>
+            <p>Implemented a feedback controller in MATLAB to stabilize and simulate the Cassie bipedal robot walking dynamics.</p>
+            <div style="margin-top:12px;">
+              <a href="Cassie_Control.zip" download class="pill brand" style="text-decoration:none;">Download Code ⬇</a>
+            </div>
+          </div>
+        
+          <div class="card">
+            <img src="images/abaqus_thumbnail.png" alt="Abaqus VUMAT" class="project-image">
+            <div class="tag-row">
+              <span class="pill accent">Fortran</span>
+              <span class="pill">Abaqus</span>
+            </div>
+            <h3>Constitutive Modeling (VUMAT)</h3>
+            <p>Derived finite-strain thermoelasticity subroutines for high-speed impact simulations.</p>
+            <div style="margin-top:12px;">
+              <a href="VUMAT_Report.pdf" target="_blank" class="pill brand" style="text-decoration:none;">Read Report 📄</a>
+            </div>
+          </div>
+        
+          <div class="card">
+            <img src="images/drone_cpp_thumb.png" alt="C++ Drone" class="project-image">
+            <div class="tag-row">
+              <span class="pill accent">C++</span>
+              <span class="pill">Embedded</span>
+            </div>
+            <h3>Custom Flight Controller</h3>
+            <p>Implemented a cascaded PID controller and state estimator in C++ on a microcontroller for obstacle navigation.</p>
+          </div>
+        
+          <div class="card">
+            <img src="images/embedded_thumb.png" alt="Embedded Device" class="project-image">
+            <div class="tag-row">
+              <span class="pill accent">Embedded</span>
+              <span class="pill">C</span>
+              <span class="pill">ESP32</span>
+            </div>
+            <h3>Handheld Path-Tracker</h3>
+            <p>Designed a mechatronic device using ESP32 and IMU sensor fusion to maintain absolute heading.</p>
+          </div>
+        
+          <div class="card">
+            <img src="images/turbine_thumb.png" alt="Wind Turbine" class="project-image">
+            <div class="tag-row">
+              <span class="pill accent">SolidWorks</span>
+              <span class="pill">FEA</span>
+            </div>
+            <h3>Wind Turbine Design</h3>
+            <p>Designed and manufactured a high-stiffness turbine blade assembly, validated via FEA and physical testing.</p>
+          </div>
+        
+        </div>
+      
       </div>
     </div>
   </section>
