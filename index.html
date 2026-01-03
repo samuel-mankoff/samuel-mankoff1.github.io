@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Samuel Mankoff | Robotics & Control</title>
+  <meta name="description" content="Portfolio of Samuel Mankoff - Robotics Engineer at UC Berkeley" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      /* Base colors */
+      --bg: #0f172a;       /* Dark Mode Base */
+      --text: #f1f5f9;
+      --muted: #94a3b8;
+      
+      /* Brand */
+      --brand: #6366f1;
+      --accent: #22d3ee;
+      --success: #10b981;
+
+      /* Cards */
+      --card-bg: rgba(30, 41, 59, 0.7);
+      --border: rgba(255,255,255,0.1);
+
+      /* Layout */
+      --max: 1120px;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    a { color: inherit; text-decoration: none; transition: 0.2s; }
+    .wrap { width: min(var(--max), calc(100% - 40px)); margin: 0 auto; }
+
+    /* Navigation */
+    .nav {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border);
+      position: sticky; top: 0;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(12px);
+      z-index: 100;
+    }
+    .nav-inner { display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-weight: 700; font-size: 18px; letter-spacing: -0.02em; }
+    .nav-links { display: flex; gap: 20px; font-size: 14px; font-weight: 500; }
+    .nav-links a:hover { color: var(--accent); }
+
+    /* Hero Section */
+    .hero { padding: 80px 0 60px; }
+    h1 {
+      font-size: clamp(32px, 5vw, 56px);
+      margin: 0 0 20px;
+      line-height: 1.1;
+      background: linear-gradient(135deg, #fff 0%, #94a3b8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-sub {
+      font-size: 18px;
+      color: var(--muted);
+      max-width: 600px;
+      margin-bottom: 30px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: var(--brand);
+      color: white;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .btn:hover { background: #4f46e5; transform: translateY(-2px); }
+
+    /* Grid Layout */
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+    
+    @media (max-width: 768px) {
+      .grid-2 { grid-template-columns: 1fr; }
+    }
+
+    /* Cards */
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: var(--brand);
+    }
+    
+    .project-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 16px;
+      background: #1e293b;
+      border: 1px solid var(--border);
+    }
+
+    .tag-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+    .pill {
+      font-size: 11px;
+      font-family: 'JetBrains Mono', monospace;
+      padding: 4px 8px;
+      border-radius: 4px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid var(--border);
+      color: var(--muted);
+    }
+    .pill.brand { color: var(--brand); border-color: rgba(99,102,241,0.2); background: rgba(99,102,241,0.1); }
+    .pill.accent { color: var(--accent); border-color: rgba(34,211,238,0.2); background: rgba(34,211,238,0.1); }
+
+    h3 { margin: 0 0 8px; font-size: 20px; }
+    p { margin: 0; font-size: 14px; color: var(--muted); }
+
+    .section-title {
+      margin: 60px 0 30px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+      display: flex; justify-content: space-between; align-items: baseline;
+    }
+    .section-title h2 { margin: 0; font-size: 24px; }
+    .section-title span { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--muted); }
+
+    footer {
+      margin-top: 80px; padding: 40px 0;
+      border-top: 1px solid var(--border);
+      text-align: center; color: var(--muted); font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="nav">
+    <div class="wrap nav-inner">
+      <div class="logo">Samuel Mankoff</div>
+      <div class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="files/Samuel_Mankoff_Resume.pdf" target="_blank">Resume ↗</a> 
+        <a href="https://github.com/samuel-mankoff" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="wrap">
+      <h1>Robotics & Control Engineer</h1>
+      <p class="hero-sub">
+        MS Mechanical Engineering at <b>UC Berkeley</b>. <br>
+        Bridging the gap between <b>continuum mechanics</b> and <b>intelligent robotic control</b>.
+      </p>
+      <div class="tag-row">
+        <span class="pill brand">ROS 2</span>
+        <span class="pill brand">MuJoCo</span>
+        <span class="pill brand">Model Predictive Control</span>
+        <span class="pill brand">Abaqus VUMAT</span>
+      </div>
+    </div>
+  </header>
+
+  <section id="projects">
+    <div class="wrap">
+      <div class="section-title">
+        <h2>Selected Projects</h2>
+        <span>2024 - 2026</span>
+      </div>
+
+      <div class="grid-3">
+        
+        <a href="https://zhenga1.github.io/vr-teleop-robotics/" target="_blank" class="card">
+          <img src="images/teleop_thumb.png" alt="VR Teleop" class="project-image">
+          <div class="tag-row">
+            <span class="pill accent">ROS 2</span>
+            <span class="pill">Python</span>
+            <span class="pill">Hardware</span>
+          </div>
+          <h3>VR Teleoperation for LfD</h3>
+          <p>Architected a real-time teleoperation pipeline (<100ms latency) bridging a Meta Quest 3 and UR7e arm to collect imitation learning data.</p>
+        </a>
+
+        <a href="#" class="card">
+          <img src="images/unitree_thumbnail.png" alt="Unitree RL" class="project-image">
+          <div class="tag-row">
+            <span class="pill accent">Reinforcement Learning</span>
+            <span class="pill">MuJoCo</span>
+            <span class="pill">PyTorch</span>
+          </div>
+          <h3>Seismic Stability (Unitree Go1)</h3>
+          <p>Trained RL policies for a quadruped robot to recover from extreme ground velocity surges (simulated earthquakes) and external pushes.</p>
+        </a>
+
+        <a href="#" class="card">
+          <img src="images/quad_land_thumb.png" alt="MPC Drone" class="project-image">
+          <div class="tag-row">
+            <span class="pill accent">Optimal Control</span>
+            <span class="pill">Pyomo</span>
+            <span class="pill">IPOPT</span>
+          </div>
+          <h3>Nonlinear MPC for Drones</h3>
+          <p>Designed a Nonlinear Model Predictive Controller to autonomously dock a quadcopter onto a moving delivery truck under wind constraints.</p>
+        </a>
+
+        <a href="#" class="card">
+          <img src="images/abaqus_thumbnail.png" alt="Abaqus VUMAT" class="project-image">
+          <div class="tag-row">
+            <span class="pill accent">Fortran</span>
+            <span class="pill">Abaqus</span>
+            <span class="pill">FEA</span>
+          </div>
+          <h3>Constitutive Modeling (VUMAT)</h3>
+          <p>Derived and implemented custom finite-strain thermoelasticity subroutines in Fortran for high-speed impact simulations.</p>
+        </a>
+
+        <a href="#" class="card">
+          <img src="images/drone_cpp_thumb.png" alt="C++ Drone" class="project-image">
+          <div class="tag-row">
+            <span class="pill accent">C++</span>
+            <span class="pill">Embedded</span>
+            <span class="pill">State Estimation</span>
+          </div>
+          <h3>Custom Flight Controller</h3>
+          <p>Implemented a cascaded PID controller and state estimator in C++ on a microcontroller for obstacle course navigation.</p>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="wrap">
+      <div class="section-title">
+        <h2>Experience</h2>
+        <span>Industry & Research</span>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <div class="tag-row"><span class="pill">Internship</span></div>
+          <h3>TaylorMade Golf</h3>
+          <p style="margin-bottom: 10px; color: var(--text);"><b>R&D Engineering Intern</b></p>
+          <p>Conducted robot-based swing testing and data analysis to validate performance metrics for next-gen driver designs.</p>
+        </div>
+
+        <div class="card">
+          <div class="tag-row"><span class="pill">Competition Team</span></div>
+          <h3>Formula Electric (FSAE)</h3>
+          <p style="margin-bottom: 10px; color: var(--text);"><b>Mechanical Design Team</b></p>
+          <p>Designed and manufactured high-voltage accumulator components and chassis structures for a student-built electric racecar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <p>&copy; 2026 Samuel Mankoff. Built with HTML/CSS.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
