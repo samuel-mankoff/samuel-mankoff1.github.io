@@ -326,7 +326,7 @@
     </div>
   </section> -->
 
-  <section id="projects">
+  <!-- <section id="projects">
     <div class="wrap">
       <div class="section-title">
         <h2>Selected Projects</h2>
@@ -386,6 +386,143 @@
           <p>Derived finite-strain thermoelasticity subroutines for high-speed impact.</p>
         </div>
 
+      </div>
+    </div>
+  </section> -->
+
+  <section id="projects">
+    <div class="wrap">
+      <div class="section-title" style="align-items: flex-start; flex-direction: column; gap: 5px;">
+        <div style="display:flex; justify-content:space-between; width:100%; align-items: baseline;">
+            <h2>Selected Projects</h2>
+            <span>2024 - 2026</span>
+        </div>
+        <p style="font-size: 13px; color: var(--brand); margin: 0; font-weight: 500;">
+          💡 Tip: Click any card background to view detailed STAR breakdown.
+        </p>
+      </div>
+
+      <div class="grid-3">
+        
+        <div class="card" onclick="openModal('m-teleop')" style="cursor:pointer;">
+          <img src="images/Quest_ur7e.png" alt="VR Teleop" class="project-image">
+          <div class="tag-row">
+            <span class="pill accent">ROS 2</span>
+            <span class="pill">Python</span>
+            <span class="pill">Hardware</span>
+          </div>
+          <h3>VR Teleoperation for LfD</h3>
+          <p>Architected a real-time teleoperation pipeline (<100ms latency) bridging a Meta Quest 3 and UR7e arm.</p>
+          
+          <div style="margin-top:16px; display:grid; grid-template-columns: 1fr 1fr; gap:10px;">
+            <a href="https://zhenga1.github.io/vr-teleop-robotics/" target="_blank" class="pill brand" 
+               onclick="event.stopPropagation()" style="text-align:center; padding:8px;">View Website ↗</a>
+            <a href="https://github.com/samuel-mankoff/meceng206a-Final-Project" target="_blank" class="pill accent" 
+               onclick="event.stopPropagation()" style="text-align:center; padding:8px; color:var(--bg);">GitHub Repo 💻</a>
+          </div>
+        </div>
+
+        <div class="card" onclick="openModal('m-unitree')" style="cursor:pointer;">
+          <img src="images/unitree.gif" alt="Unitree RL" class="project-image">
+          <div class="tag-row">
+            <span class="pill accent">RL</span>
+            <span class="pill">MuJoCo</span>
+            <span class="pill">PyTorch</span>
+          </div>
+          <h3>Seismic Stability (Unitree Go1)</h3>
+          <p>Trained RL policies for a quadruped to recover from ground velocity surges. Based on mjlab framework.</p>
+          
+          <div style="margin-top:12px; display:flex; gap:10px;">
+            <a href="pdf/ME292b.pdf" target="_blank" class="pill brand" onclick="event.stopPropagation()" style="text-decoration:none;">View Slides ↗</a>
+          </div>
+        </div>
+
+        <div class="card" onclick="openModal('m-mpc')" style="cursor:pointer;">
+          <img src="images/MPC_drone.gif" alt="MPC Drone" class="project-image">
+          <div class="tag-row">
+            <span class="pill accent">Optimal Control</span>
+            <span class="pill">Pyomo</span>
+          </div>
+          <h3>Nonlinear MPC for Drones</h3>
+          <p>Designed a Nonlinear MPC to autonomously dock a quadcopter onto a moving delivery truck.</p>
+          
+          <div style="margin-top:12px; display:flex; gap:10px;">
+            <a href="MPC_Final_Project (3).pdf" target="_blank" class="pill brand" onclick="event.stopPropagation()" style="text-decoration:none;">Read Report 📄</a>
+            <a href="MPC_Code.ipynb" target="_blank" class="pill accent" onclick="event.stopPropagation()" style="text-decoration:none; color:var(--bg);">View Code (Colab) 💻</a>
+          </div>
+        </div>
+
+        <div class="card" onclick="openModal('m-cassie')" style="cursor:pointer;">
+          <img src="images/cassie.png" alt="Cassie Robot Stabilizing" class="project-image"> 
+          <div class="tag-row">
+            <span class="pill accent">MATLAB</span>
+            <span class="pill">Feedback Control</span>
+          </div>
+          <h3>Cassie Robot Stabilization</h3>
+          <p>Implemented a feedback controller in MATLAB to stabilize and simulate the Cassie bipedal robot walking dynamics.</p>
+          
+          <div style="margin-top:12px;">
+            <a href="https://github.com/samuel-mankoff/Cassie-Biped-Controller.git" target="_blank" class="pill brand" onclick="event.stopPropagation()" style="text-decoration:none;">View Code on GitHub ↗</a>
+          </div>
+        </div>
+
+        <div class="card" onclick="openModal('m-vumat')" style="cursor:pointer;">
+          <img src="images/Abaqus.png" alt="Abaqus VUMAT" class="project-image">
+          <div class="tag-row">
+            <span class="pill accent">Fortran</span>
+            <span class="pill">Abaqus</span>
+          </div>
+          <h3>Constitutive Modeling (VUMAT)</h3>
+          <p>Derived finite-strain thermoelasticity subroutines for high-speed impact simulations.</p>
+          
+          <div style="margin-top:12px;">
+            <a href="Thermoelasticity_Report (1).pdf" target="_blank" class="pill brand" onclick="event.stopPropagation()" style="text-decoration:none;">Read Report 📄</a>
+          </div>
+        </div>
+
+        <div class="card" onclick="openModal('m-cfd')" style="cursor:pointer;">
+          <img src="images/windtunnel.png" alt="CFD vs Wind Tunnel" class="project-image">
+          <div class="tag-row">
+            <span class="pill accent">Ansys CFD</span>
+            <span class="pill">Wind Tunnel</span>
+            <span class="pill">MATLAB</span>
+          </div>
+          <h3>CFD Model Validation</h3>
+          <p>Validated an Ansys K-Omega SST turbulence model against physical wind tunnel data.</p>
+          
+          <div style="margin-top:12px;">
+            <a href="pdf/ME103.pdf" target="_blank" class="pill brand" onclick="event.stopPropagation()" style="text-decoration:none;">View Analysis Slides ↗</a>
+          </div>
+        </div>
+
+        <div class="card" style="cursor:pointer;"> <img src="images/Crazyflie-drone.png" alt="C++ Drone" class="project-image">
+          <div class="tag-row">
+            <span class="pill accent">C++</span>
+            <span class="pill">Embedded</span>
+          </div>
+          <h3>Custom Flight Controller</h3>
+          <p>Implemented a cascaded PID controller and state estimator in C++ on a microcontroller for obstacle navigation.</p>
+        </div>
+
+        <div class="card" style="cursor:pointer;"> <img src="images/Path_tracker.png" alt="Embedded Device" class="project-image">
+          <div class="tag-row">
+            <span class="pill accent">Embedded</span>
+            <span class="pill">C</span>
+            <span class="pill">ESP32</span>
+          </div>
+          <h3>Handheld Path-Tracker</h3>
+          <p>Designed a mechatronic device using ESP32 and IMU sensor fusion to maintain absolute heading.</p>
+        </div>
+
+        <div class="card" style="cursor:pointer;"> <img src="images/turbine_thumb.png" alt="Wind Turbine" class="project-image">
+          <div class="tag-row">
+            <span class="pill accent">SolidWorks</span>
+            <span class="pill">FEA</span>
+          </div>
+          <h3>Wind Turbine Design</h3>
+          <p>Designed and manufactured a high-stiffness turbine blade assembly, validated via FEA and physical testing.</p>
+        </div>
+      
       </div>
     </div>
   </section>
