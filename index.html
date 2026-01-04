@@ -398,7 +398,7 @@
             <span>2024 - 2026</span>
         </div>
         <p style="font-size: 13px; color: var(--brand); margin: 0; font-weight: 500;">
-          💡 Tip: Click any card background to view detailed STAR breakdown.
+          💡 Tip: Click any card background to view detailed project breakdown.
         </p>
       </div>
 
@@ -1013,6 +1013,25 @@
       </div>
     </div>
   </div>
+
+  <script>
+    function openModal(id) {
+      const modal = document.getElementById(id);
+      if (modal) {
+        modal.classList.add('open');
+        document.body.style.overflow = 'hidden'; // Stop background scrolling
+      } else {
+        console.error("Modal not found: " + id);
+      }
+    }
+    
+    function closeModal(e) {
+      if (e.target.classList.contains('modal-overlay') || e.target.classList.contains('close-btn')) {
+        document.querySelectorAll('.modal-overlay').forEach(m => m.classList.remove('open'));
+        document.body.style.overflow = 'auto'; // Restore scrolling
+      }
+    }
+  </script>
   
 </body>
 </html>
