@@ -10,162 +10,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 
-  <!-- <style>
-    /* :root{
-      /* Base colors *
-      --bg: #0f172a;       /* Dark Mode Base */
-      /* --text: #f1f5f9; */
-      /* --muted: #94a3b8; */
-      
-      /* Brand *
-      --brand: #6366f1;
-      --accent: #22d3ee;
-      --success: #10b981;
-
-      /* Cards *
-      --card-bg: rgba(30, 41, 59, 0.7);
-      --border: rgba(255,255,255,0.1);
-
-      /* Layout *
-      --max: 1120px;
-    }
-     */
-    
-    :root {
-      /* Base colors (Light Mode) */
-      --bg: #f8fafc;        /* Almost white background */
-      --text: #0f172a;      /* Dark blue-black text */
-      --muted: #64748b;     /* Medium gray for secondary text */
-
-      /* Brand */
-      --brand: #4f46e5;     /* Indigo */
-      --accent: #0ea5e9;    /* Sky blue */
-      --success: #10b981;   /* Emerald green */
-
-      /* Cards */
-      --card-bg: #ffffff;   /* Pure white cards */
-      --border: #e2e8f0;    /* Light gray borders */
-
-      /* Layout */
-      --max: 1120px;
-    }
-
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: 'Inter', system-ui, sans-serif;
-      color: var(--text);
-      background: var(--bg);
-      line-height: 1.6;
-    }
-
-    a { color: inherit; text-decoration: none; transition: 0.2s; }
-    .wrap { width: min(var(--max), calc(100% - 40px)); margin: 0 auto; }
-
-    /* Navigation */
-    .nav {
-      padding: 20px 0;
-      border-bottom: 1px solid var(--border);
-      position: sticky; top: 0;
-      background: rgba(15, 23, 42, 0.85);
-      backdrop-filter: blur(12px);
-      z-index: 100;
-    }
-    .nav-inner { display: flex; justify-content: space-between; align-items: center; }
-    .logo { font-weight: 700; font-size: 18px; letter-spacing: -0.02em; }
-    .nav-links { display: flex; gap: 20px; font-size: 14px; font-weight: 500; }
-    .nav-links a:hover { color: var(--accent); }
-
-    /* Hero Section */
-    .hero { padding: 80px 0 60px; }
-    h1 {
-      font-size: clamp(32px, 5vw, 56px);
-      margin: 0 0 20px;
-      line-height: 1.1;
-      background: linear-gradient(135deg, #fff 0%, #94a3b8 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    .hero-sub {
-      font-size: 18px;
-      color: var(--muted);
-      max-width: 600px;
-      margin-bottom: 30px;
-    }
-    .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      background: var(--brand);
-      color: white;
-      border-radius: 8px;
-      font-weight: 600;
-      font-size: 14px;
-    }
-    .btn:hover { background: #4f46e5; transform: translateY(-2px); }
-
-    /* Grid Layout */
-    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
-    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
-    
-    @media (max-width: 768px) {
-      .grid-2 { grid-template-columns: 1fr; }
-    }
-
-    /* Cards */
-    .card {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 24px;
-      transition: transform 0.2s, border-color 0.2s;
-    }
-    .card:hover {
-      transform: translateY(-4px);
-      border-color: var(--brand);
-    }
-    
-    .project-image {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 16px;
-      background: #1e293b;
-      border: 1px solid var(--border);
-    }
-
-    .tag-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
-    .pill {
-      font-size: 11px;
-      font-family: 'JetBrains Mono', monospace;
-      padding: 4px 8px;
-      border-radius: 4px;
-      background: rgba(255,255,255,0.05);
-      border: 1px solid var(--border);
-      color: var(--muted);
-    }
-    .pill.brand { color: var(--brand); border-color: rgba(99,102,241,0.2); background: rgba(99,102,241,0.1); }
-    .pill.accent { color: var(--accent); border-color: rgba(34,211,238,0.2); background: rgba(34,211,238,0.1); }
-
-    h3 { margin: 0 0 8px; font-size: 20px; }
-    p { margin: 0; font-size: 14px; color: var(--muted); }
-
-    .section-title {
-      margin: 60px 0 30px;
-      padding-bottom: 10px;
-      border-bottom: 1px solid var(--border);
-      display: flex; justify-content: space-between; align-items: baseline;
-    }
-    .section-title h2 { margin: 0; font-size: 24px; }
-    .section-title span { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--muted); }
-
-    footer {
-      margin-top: 80px; padding: 40px 0;
-      border-top: 1px solid var(--border);
-      text-align: center; color: var(--muted); font-size: 13px;
-    }
-  </style> -->
-
 
   <style>
     :root{
@@ -290,6 +134,33 @@
       border-top: 1px solid var(--border);
       text-align: center; color: var(--muted); font-size: 13px;
     }
+    /* MODAL STYLES */
+    .modal-overlay {
+      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(4px);
+      z-index: 999; display: none; place-items: center; opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .modal-overlay.open { display: grid; opacity: 1; }
+    
+    .modal-content {
+      background: var(--card-bg); width: min(700px, 90%);
+      max-height: 90vh; overflow-y: auto;
+      border-radius: 16px; border: 1px solid var(--border);
+      box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+      padding: 30px; position: relative;
+    }
+    
+    .close-btn {
+      position: absolute; top: 15px; right: 20px;
+      font-size: 24px; cursor: pointer; color: var(--muted);
+      background: none; border: none;
+    }
+    .close-btn:hover { color: var(--text); }
+
+    .star-grid { display: grid; gap: 16px; margin-top: 20px; }
+    .star-item h4 { color: var(--brand); margin: 0 0 4px; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .star-item p { margin: 0; font-size: 15px; color: var(--text); }
   </style>
 </head>
 
@@ -323,92 +194,12 @@
     </div>
   </header>
 
-  <section id="projects">
+  <!-- <section id="projects">
     <div class="wrap">
       <div class="section-title">
         <h2>Selected Projects</h2>
         <span>2024 - 2026</span>
       </div>
-
-      <!-- <div class="grid-3">
-        
-        <a href="https://zhenga1.github.io/vr-teleop-robotics/" target="_blank" class="card">
-          <img src="images/teleop_thumb.png" alt="VR Teleop" class="project-image">
-          <div class="tag-row">
-            <span class="pill accent">ROS 2</span>
-            <span class="pill">Python</span>
-            <span class="pill">Hardware</span>
-          </div>
-          <h3>VR Teleoperation for LfD</h3>
-          <p>Architected a real-time teleoperation pipeline (<100ms latency) bridging a Meta Quest 3 and UR7e arm to collect imitation learning data.</p>
-        </a>
-
-        <a href="#" class="card">
-          <img src="images/unitree_thumbnail.png" alt="Unitree RL" class="project-image">
-          <div class="tag-row">
-            <span class="pill accent">Reinforcement Learning</span>
-            <span class="pill">MuJoCo</span>
-            <span class="pill">PyTorch</span>
-          </div>
-          <h3>Seismic Stability (Unitree Go1)</h3>
-          <p>Trained RL policies for a quadruped robot to recover from extreme ground velocity surges (simulated earthquakes) and external pushes.</p>
-        </a>
-
-        <!-- <a href="#" class="card">
-          <img src="images/quad_land_thumb.png" alt="MPC Drone" class="project-image">
-          <div class="tag-row">
-            <span class="pill accent">Optimal Control</span>
-            <span class="pill">Pyomo</span>
-            <span class="pill">IPOPT</span>
-          </div>
-          <h3>Nonlinear MPC for Drones</h3>
-          <p>Designed a Nonlinear Model Predictive Controller to autonomously dock a quadcopter onto a moving delivery truck under wind constraints.</p>
-        </a> 
-        <a href="MPC_Report.pdf" target="_blank" class="card">
-          <img src="images/quad_land_thumb.png" alt="MPC Drone" class="project-image">
-          <div class="tag-row">
-            <span class="pill accent">Optimal Control</span>
-            <span class="pill">Pyomo</span>
-            <span class="pill">Report PDF</span>
-          </div>
-          <h3>Nonlinear MPC for Drones</h3>
-          <p>Designed a Nonlinear Model Predictive Controller to autonomously dock a quadcopter onto a moving delivery truck. Click to view the technical report.</p>
-        </a>
-
-        <!-- <a href="#" class="card">
-          <img src="images/abaqus_thumbnail.png" alt="Abaqus VUMAT" class="project-image">
-          <div class="tag-row">
-            <span class="pill accent">Fortran</span>
-            <span class="pill">Abaqus</span>
-            <span class="pill">FEA</span>
-          </div>
-          <h3>Constitutive Modeling (VUMAT)</h3>
-          <p>Derived and implemented custom finite-strain thermoelasticity subroutines in Fortran for high-speed impact simulations.</p>
-        </a> 
-
-        <a href="VUMAT_Report.pdf" target="_blank" class="card">
-          <img src="images/abaqus_thumbnail.png" alt="Abaqus VUMAT" class="project-image">
-          <div class="tag-row">
-            <span class="pill accent">Fortran</span>
-            <span class="pill">Abaqus</span>
-            <span class="pill">Report PDF</span>
-          </div>
-          <h3>Constitutive Modeling (VUMAT)</h3>
-          <p>Derived and implemented custom finite-strain thermoelasticity subroutines in Fortran. Click to read the full analysis report.</p>
-        </a>
-
-        <a href="#" class="card">
-          <img src="images/drone_cpp_thumb.png" alt="C++ Drone" class="project-image">
-          <div class="tag-row">
-            <span class="pill accent">C++</span>
-            <span class="pill">Embedded</span>
-            <span class="pill">State Estimation</span>
-          </div>
-          <h3>Custom Flight Controller</h3>
-          <p>Implemented a cascaded PID controller and state estimator in C++ on a microcontroller for obstacle course navigation.</p>
-        </a>
-
-      </div> -->
 
                  <div class="grid-3">
           
@@ -433,7 +224,6 @@
             <h3>Seismic Stability (Unitree Go1)</h3>
             <p>Trained RL policies for a quadruped to recover from ground velocity surges. Based on mjlab framework.</p>
             <div style="margin-top:12px; display:flex; gap:10px;">
-              <!-- <a href="https://docs.google.com/presentation/d/1oaYotDyvf23qw22o23Tz1siIyZ4IOhjdEnGI-_WLmuU/edit?usp=sharing" target="_blank" class="pill brand" style="text-decoration:none;">View Slides ↗</a> -->
               <a href="pdf/ME292b.pdf" target="_blank" class="pill brand" style="text-decoration:none;">View Slides ↗</a>
 
             </div>
@@ -452,19 +242,6 @@
               <a href="MPC_Code.ipynb" target="_blank" class="pill accent" style="text-decoration:none; color:var(--bg);">View Code (Colab) 💻</a>
             </div>
           </div>
-        
-          <!-- <div class="card">
-            <img src="images/unitree_thumbnail.png" alt="Cassie Robot" class="project-image"> 
-            <div class="tag-row">
-              <span class="pill accent">MATLAB</span>
-              <span class="pill">Controls</span>
-            </div>
-            <h3>Cassie Robot Stabilization</h3>
-            <p>Implemented a feedback controller in MATLAB to stabilize and simulate the Cassie bipedal robot walking dynamics.</p>
-            <div style="margin-top:12px;">
-              <a href="cassie_project.zip" download class="pill brand" style="text-decoration:none;">Download Code ⬇</a>
-            </div>
-          </div> -->
 
            <div class="card">
             <img src="images/cassie.png" alt="Cassie Robot Stabilizing" class="project-image"> 
@@ -516,7 +293,7 @@
             <p>Designed a mechatronic device using ESP32 and IMU sensor fusion to maintain absolute heading.</p>
           </div>
         
-          <!-- <div class="card">
+          <div class="card">
             <img src="images/turbine_thumb.png" alt="Wind Turbine" class="project-image">
             <div class="tag-row">
               <span class="pill accent">SolidWorks</span>
@@ -524,7 +301,7 @@
             </div>
             <h3>Wind Turbine Design</h3>
             <p>Designed and manufactured a high-stiffness turbine blade assembly, validated via FEA and physical testing.</p>
-          </div> -->
+          </div> 
 
          <div class="card">
           <img src="images/windtunnel.png" alt="CFD vs Wind Tunnel" class="project-image">
@@ -545,6 +322,70 @@
         
         </div>
       
+      </div>
+    </div>
+  </section> -->
+
+  <section id="projects">
+    <div class="wrap">
+      <div class="section-title">
+        <h2>Selected Projects</h2>
+        <span>2024 - 2026</span>
+      </div>
+
+      <div class="grid-3">
+        
+        <div class="card">
+          <img src="images/teleop_thumb.png" alt="VR Teleop" class="project-image" onclick="openModal('m-teleop')">
+          <div class="tag-row">
+            <span class="pill accent">ROS 2</span>
+            <span class="pill">Python</span>
+            <span class="pill">Hardware</span>
+          </div>
+          <h3 onclick="openModal('m-teleop')" style="cursor:pointer;">VR Teleoperation for LfD</h3>
+          <p>Architected a real-time teleoperation pipeline (<100ms latency) bridging a Meta Quest 3 and UR7e arm.</p>
+          
+          <div style="margin-top:16px; display:grid; grid-template-columns: 1fr 1fr; gap:10px;">
+            <a href="https://zhenga1.github.io/vr-teleop-robotics/" target="_blank" class="pill brand" style="text-align:center; padding:8px;">View Website ↗</a>
+            <a href="https://github.com/samuel-mankoff/meceng206a-Final-Project" target="_blank" class="pill accent" style="text-align:center; padding:8px; color:var(--bg);">GitHub Repo 💻</a>
+          </div>
+        </div>
+
+        <div class="card" onclick="openModal('m-unitree')" style="cursor:pointer;">
+          <img src="images/unitree_thumbnail.png" alt="Unitree RL" class="project-image">
+          <div class="tag-row"><span class="pill accent">RL</span><span class="pill">MuJoCo</span></div>
+          <h3>Seismic Stability (Unitree Go1)</h3>
+          <p>Trained RL policies for a quadruped to recover from ground velocity surges.</p>
+        </div>
+
+        <div class="card" onclick="openModal('m-mpc')" style="cursor:pointer;">
+          <img src="images/quad_land_thumb.png" alt="MPC Drone" class="project-image">
+          <div class="tag-row"><span class="pill accent">Optimal Control</span><span class="pill">Pyomo</span></div>
+          <h3>Nonlinear MPC for Drones</h3>
+          <p>Designed a Nonlinear MPC to autonomously dock a quadcopter onto a moving truck.</p>
+        </div>
+
+        <div class="card" onclick="openModal('m-cassie')" style="cursor:pointer;">
+          <img src="images/cassie_stabilize.gif" alt="Cassie Robot" class="project-image"> 
+          <div class="tag-row"><span class="pill accent">MATLAB</span><span class="pill">Control</span></div>
+          <h3>Cassie Robot Stabilization</h3>
+          <p>Implemented feedback control in MATLAB to stabilize bipedal walking dynamics.</p>
+        </div>
+
+        <div class="card" onclick="openModal('m-cfd')" style="cursor:pointer;">
+          <img src="images/cfd_thumb.png" alt="CFD Analysis" class="project-image">
+          <div class="tag-row"><span class="pill accent">Ansys CFD</span><span class="pill">Validation</span></div>
+          <h3>CFD Model Validation</h3>
+          <p>Validated Ansys turbulence models against physical wind tunnel data.</p>
+        </div>
+
+        <div class="card" onclick="openModal('m-vumat')" style="cursor:pointer;">
+          <img src="images/abaqus_thumbnail.png" alt="Abaqus" class="project-image">
+          <div class="tag-row"><span class="pill accent">Fortran</span><span class="pill">Abaqus</span></div>
+          <h3>Constitutive Modeling (VUMAT)</h3>
+          <p>Derived finite-strain thermoelasticity subroutines for high-speed impact.</p>
+        </div>
+
       </div>
     </div>
   </section>
@@ -582,5 +423,184 @@
     </div>
   </footer>
 
+<div id="m-teleop" class="modal-overlay" onclick="closeModal(event)">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal(event)">×</button>
+      <h2>VR Teleoperation for LfD</h2>
+      <div class="star-grid">
+        <div class="star-item">
+          <h4>Situation</h4>
+          <p>Modern imitation learning policies require massive amounts of high-quality human demonstration data, but collecting this data on hardware is expensive and unintuitive.</p>
+        </div>
+        <div class="star-item">
+          <h4>Task</h4>
+          <p>Build a low-cost, low-latency teleoperation interface bridging a consumer VR headset (Meta Quest 3) and a 7-DoF robot arm (UR7e).</p>
+        </div>
+        <div class="star-item">
+          <h4>Action</h4>
+          <p>I architected a ROS 2 pipeline using Zenoh for wireless communication. I implemented a "Logical Home" mapping algorithm to translate the unconstrained VR controller space into safe robot joint configurations, avoiding singularities.</p>
+        </div>
+        <div class="star-item">
+          <h4>Result</h4>
+          <p>Achieved sub-100ms end-to-end latency. The system successfully recorded and replayed complex sorting tasks, enabling the collection of diverse datasets for training.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="m-unitree" class="modal-overlay" onclick="closeModal(event)">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal(event)">×</button>
+      <h2>Seismic Stability (Unitree Go1)</h2>
+      <div class="star-grid">
+        <div class="star-item">
+          <h4>Situation</h4>
+          <p>Legged robots often fail when subjected to sudden, high-velocity ground displacements (simulated earthquakes) which standard position-control cannot handle.</p>
+        </div>
+        <div class="star-item">
+          <h4>Task</h4>
+          <p>Develop a Reinforcement Learning policy that enables a Unitree Go1 quadruped to maintain stability during extreme ground surges.</p>
+        </div>
+        <div class="star-item">
+          <h4>Action</h4>
+          <p>Using the mjlab framework in MuJoCo, I trained a policy using PPO. I designed a custom reward function that penalized base-height deviation while rewarding foot contact time to encourage stability.</p>
+        </div>
+        <div class="star-item">
+          <h4>Result</h4>
+          <p>The policy successfully recovered from ground velocities 3x higher than the baseline controller could handle, demonstrating robust sim-to-sim transfer.</p>
+        </div>
+        <div style="margin-top:20px;">
+           <a href="[PASTE_SLIDES_LINK]" target="_blank" class="pill brand">View Slides ↗</a>
+         </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="m-mpc" class="modal-overlay" onclick="closeModal(event)">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal(event)">×</button>
+      <h2>Nonlinear MPC for Drones</h2>
+      <div class="star-grid">
+        <div class="star-item">
+          <h4>Situation</h4>
+          <p>Landing a drone on a moving delivery truck requires handling tight constraints and non-linear dynamics that PID controllers cannot manage.</p>
+        </div>
+        <div class="star-item">
+          <h4>Task</h4>
+          <p>Design a controller capable of autonomous precision docking on a target moving at variable speeds.</p>
+        </div>
+        <div class="star-item">
+          <h4>Action</h4>
+          <p>I formulated a Constrained Finite Time Optimal Control problem using Pyomo and the IPOPT solver. I benchmarked a Nonlinear MPC against a Linear MPC to handle high pitch angles.</p>
+        </div>
+        <div class="star-item">
+          <h4>Result</h4>
+          <p>The NMPC achieved a successful landing with near-zero relative velocity, whereas the Linear MPC failed due to linearization errors at high angles of attack.</p>
+        </div>
+        <div style="margin-top:20px;">
+           <a href="files/MPC_Report.pdf" target="_blank" class="pill brand">Read Full Report 📄</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="m-cassie" class="modal-overlay" onclick="closeModal(event)">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal(event)">×</button>
+      <h2>Cassie Robot Stabilization</h2>
+      <div class="star-grid">
+        <div class="star-item">
+          <h4>Situation</h4>
+          <p>Bipedal robots like Cassie are inherently unstable and require high-frequency control loops to remain upright.</p>
+        </div>
+        <div class="star-item">
+          <h4>Task</h4>
+          <p>Implement a feedback controller to stabilize the robot's standing and walking gait in simulation.</p>
+        </div>
+        <div class="star-item">
+          <h4>Action</h4>
+          <p>I developed a state-space controller in MATLAB, deriving the equations of motion and implementing a LQR regulator to manage the center of mass.</p>
+        </div>
+        <div class="star-item">
+          <h4>Result</h4>
+          <p>Successfully stabilized the robot in simulation, allowing it to reject external disturbances and maintain balance.</p>
+        </div>
+        <div style="margin-top:20px;">
+           <a href="files/cassie_project.zip" download class="pill brand">Download MATLAB Code ⬇</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="m-cfd" class="modal-overlay" onclick="closeModal(event)">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal(event)">×</button>
+      <h2>CFD vs Wind Tunnel Validation</h2>
+      <div class="star-grid">
+        <div class="star-item">
+          <h4>Situation</h4>
+          <p>Numerical CFD models are cheaper than wind tunnels but require rigorous validation to be trusted for aerodynamic design.</p>
+        </div>
+        <div class="star-item">
+          <h4>Task</h4>
+          <p>Determine the error margin of Ansys K-Omega SST turbulence models compared to real-world data.</p>
+        </div>
+        <div class="star-item">
+          <h4>Action</h4>
+          <p>I conducted physical wind tunnel tests using strain gauges to measure drag/downforce. I then recreated the exact setup in Ansys Fluent and ran simulations at matching Reynolds numbers.</p>
+        </div>
+        <div class="star-item">
+          <h4>Result</h4>
+          <p>Found that while Drag values were within 5% of physical data, Downforce calculations deviated by >10%, highlighting the limitations of the K-Omega model for flow separation.</p>
+        </div>
+        <div style="margin-top:20px;">
+           <a href="files/CFD_Slides.pdf" target="_blank" class="pill brand">View Analysis Slides ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="m-vumat" class="modal-overlay" onclick="closeModal(event)">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal(event)">×</button>
+      <h2>Constitutive Modeling (VUMAT)</h2>
+      <div class="star-grid">
+        <div class="star-item">
+          <h4>Situation</h4>
+          <p>Standard material libraries in Abaqus often fail to capture the thermodynamic coupling during high-speed impact events.</p>
+        </div>
+        <div class="star-item">
+          <h4>Task</h4>
+          <p>Implement a custom material law that accounts for finite-strain thermoelasticity.</p>
+        </div>
+        <div class="star-item">
+          <h4>Action</h4>
+          <p>I derived the governing equations from continuum mechanics principles and implemented them in a Fortran VUMAT subroutine. I debugged the integration algorithm to ensure numerical stability.</p>
+        </div>
+        <div class="star-item">
+          <h4>Result</h4>
+          <p>The custom subroutine accurately predicted temperature rise due to rapid deformation, validated against theoretical benchmarks.</p>
+        </div>
+        <div style="margin-top:20px;">
+           <a href="files/VUMAT_Report.pdf" target="_blank" class="pill brand">Read Report 📄</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openModal(id) {
+      document.getElementById(id).classList.add('open');
+      document.body.style.overflow = 'hidden'; // Stop background scrolling
+    }
+    
+    function closeModal(e) {
+      if (e.target.classList.contains('modal-overlay') || e.target.classList.contains('close-btn')) {
+        document.querySelectorAll('.modal-overlay').forEach(m => m.classList.remove('open'));
+        document.body.style.overflow = 'auto'; // Restore scrolling
+      }
+    }
+  </script>
+  
 </body>
 </html>
