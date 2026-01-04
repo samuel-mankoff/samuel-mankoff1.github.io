@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 
-  <style>
+  <!-- <style>
     /* :root{
       /* Base colors *
       --bg: #0f172a;       /* Dark Mode Base */
@@ -164,6 +164,132 @@
       border-top: 1px solid var(--border);
       text-align: center; color: var(--muted); font-size: 13px;
     }
+  </style> -->
+
+
+  <style>
+    :root{
+      /* Light Mode Colors */
+      --bg: #f8fafc;         /* Light Gray Background */
+      --text: #1e293b;       /* Dark Slate Text */
+      --muted: #64748b;      /* Muted Gray */
+      
+      /* Brand Colors */
+      --brand: #4f46e5;      /* Indigo */
+      --accent: #0ea5e9;     /* Sky Blue */
+      
+      /* Card Styles */
+      --card-bg: #ffffff;
+      --border: #e2e8f0;     /* Very light gray border */
+      --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+      --max: 1120px;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    a { color: inherit; text-decoration: none; transition: 0.2s; }
+    .wrap { width: min(var(--max), calc(100% - 40px)); margin: 0 auto; }
+
+    /* Navigation */
+    .nav {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border);
+      position: sticky; top: 0;
+      background: rgba(255, 255, 255, 0.85); /* White glassmorphism */
+      backdrop-filter: blur(12px);
+      z-index: 100;
+    }
+    .nav-inner { display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-weight: 700; font-size: 18px; color: var(--text); }
+    .nav-links { display: flex; gap: 20px; font-size: 14px; font-weight: 500; }
+    .nav-links a:hover { color: var(--brand); }
+
+    /* Hero Section */
+    .hero { padding: 80px 0 60px; }
+    h1 {
+      font-size: clamp(32px, 5vw, 56px);
+      margin: 0 0 20px;
+      line-height: 1.1;
+      /* Dark Gradient for Light Mode */
+      background: linear-gradient(135deg, #1e293b 0%, #475569 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-sub {
+      font-size: 18px;
+      color: var(--muted);
+      max-width: 600px;
+      margin-bottom: 30px;
+    }
+
+    /* Grid Layout */
+    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    @media (max-width: 768px) { .grid-2 { grid-template-columns: 1fr; } }
+
+    /* Cards */
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: var(--shadow); /* Added shadow for pop */
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+      border-color: var(--brand);
+    }
+    
+    .project-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 16px;
+      background: #f1f5f9; /* Light gray placeholder */
+      border: 1px solid var(--border);
+    }
+
+    .tag-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+    .pill {
+      font-size: 11px;
+      font-family: 'JetBrains Mono', monospace;
+      padding: 4px 8px;
+      border-radius: 4px;
+      background: #f1f5f9; /* Light gray background */
+      border: 1px solid var(--border);
+      color: var(--muted);
+    }
+    .pill.brand { color: var(--brand); background: #eef2ff; border-color: #c7d2fe; }
+    .pill.accent { color: #0284c7; background: #e0f2fe; border-color: #bae6fd; }
+
+    h3 { margin: 0 0 8px; font-size: 20px; color: var(--text); }
+    p { margin: 0; font-size: 14px; color: var(--muted); }
+
+    .section-title {
+      margin: 60px 0 30px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+      display: flex; justify-content: space-between; align-items: baseline;
+    }
+    .section-title h2 { margin: 0; font-size: 24px; color: var(--text); }
+    .section-title span { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--muted); }
+
+    footer {
+      margin-top: 80px; padding: 40px 0;
+      border-top: 1px solid var(--border);
+      text-align: center; color: var(--muted); font-size: 13px;
+    }
   </style>
 </head>
 
@@ -287,7 +413,7 @@
                  <div class="grid-3">
           
           <a href="https://zhenga1.github.io/vr-teleop-robotics/" target="_blank" class="card">
-            <img src="images/Quest_ur7e" alt="VR Teleop" class="project-image">
+            <img src="images/Quest_ur7e.png" alt="VR Teleop" class="project-image">
             <div class="tag-row">
               <span class="pill accent">ROS 2</span>
               <span class="pill">Python</span>
