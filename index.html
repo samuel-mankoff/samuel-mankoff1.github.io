@@ -448,7 +448,7 @@
           
           <div style="margin-top:12px; display:flex; gap:10px;">
             <a href="MPC_Final_Project (3).pdf" target="_blank" class="pill brand" onclick="event.stopPropagation()" style="text-decoration:none;">Read Report 📄</a>
-            <a href="MPC_Code.ipynb" target="_blank" class="pill accent" onclick="event.stopPropagation()" style="text-decoration:none; color:var(--bg);">View Code (Colab) 💻</a>
+            <a href="Sammy_MPC_Final.ipynb" target="_blank" class="pill accent" onclick="event.stopPropagation()" style="text-decoration:none; color:var(--bg);">View Code (Colab) 💻</a>
           </div>
         </div>
 
@@ -536,11 +536,11 @@
 
       <div class="grid-2">
         <div class="card" onclick="openModal('m-taylor')">
-          <img src="images/taylormade.jpg" alt="TaylorMade Golf" class="project-image" style="object-fit: contain; background: #fff; padding: 20px;">
+          <img src="images/TaylormadeBall.png" alt="TaylorMade Golf" class="project-image" style="object-fit: contain; background: #fff; padding: 20px;">
           <div class="tag-row"><span class="pill">Internship</span></div>
           <h3>TaylorMade Golf</h3>
           <p style="margin-bottom: 10px; color: var(--text);"><b>R&D Engineering Intern</b></p>
-          <p>Conducted robot-based swing testing and data analysis to validate performance metrics for next-gen driver designs.</p>
+          <p>Conducted golf ball testing and data analysis to validate performance metrics for next-gen ball designs.</p>
         </div>
 
         <div class="card" onclick="openModal('m-fsae')">
@@ -548,7 +548,7 @@
           <div class="tag-row"><span class="pill">Competition Team</span></div>
           <h3>Formula Electric (FSAE)</h3>
           <p style="margin-bottom: 10px; color: var(--text);"><b>Mechanical Design Team</b></p>
-          <p>Designed and manufactured high-voltage accumulator components and chassis structures for a student-built electric racecar.</p>
+          <p>Designed and manufactured steering, suspension, and testing components for an electric racecar.</p>
         </div>
       </div>
     </div>
@@ -753,7 +753,7 @@
         <div class="star-item">
           <h4>Technical Approach</h4>
           <ul style="margin-top:5px; padding-left:20px; font-size:15px; color:var(--text);">
-            <li><b>Architecture:</b> Built a custom bridge using <b>Zenoh</b> to stream Quest 3 controller pose data to ROS 2 (Humble) over WiFi with minimal packet loss.</li>
+            <li><b>Architecture:</b> Built a custom bridge using <b>SteamVr/OpenVR</b> to stream Quest 3 controller pose data to ROS 2 over WiFi with minimal packet loss.</li>
             <li><b>Control Logic:</b> Implemented a "Logical Home" mapping algorithm that retargets the user's unconstrained hand motion into the robot's safety-limited workspace, preventing singularities.</li>
             <li><b>Vision:</b> Integrated Intel RealSense RGB-D streams for object detection (HSV filtering) to trigger automated task queues.</li>
           </ul>
@@ -813,7 +813,7 @@
         <div class="star-item">
           <h4>Technical Approach</h4>
           <ul style="margin-top:5px; padding-left:20px; font-size:15px; color:var(--text);">
-            <li><b>Dynamics:</b> Derived full 12-state nonlinear equations of motion to capture pitch/roll coupling effects.</li>
+            <li><b>Dynamics:</b> Derived full 12-state nonlinear equations of motion to capture pitch/roll coupling effects(only use 6-state equations of motion for modeling in 2D).</li>
             <li><b>Optimization:</b> Formulated as a Constrained Finite Time Optimal Control (CFTOC) problem using <b>Pyomo</b> and solved via <b>IPOPT</b>.</li>
             <li><b>Constraints:</b> Hard-coded actuator saturation limits and safety corridors to prevent crashes during the approach phase.</li>
           </ul>
@@ -943,7 +943,7 @@
         </div>
         <div class="star-item">
           <h4>Technical Approach</h4>
-          <p>Interfaced an IMU (MPU6050) and rotary encoders with an <b>ESP32</b>. Used sensor fusion to integrate acceleration and heading data into a global position estimate, displaying the "Home Vector" on an OLED screen.</p>
+          <p>Interfaced an IMU (MPU6050) and rotary encoders with an <b>ESP32</b>. Used sensor fusion to integrate acceleration and heading data into a global position estimate, displaying the "Home Vector" as a arrow directed by two dc motors and gears.</p>
         </div>
       </div>
     </div>
@@ -962,7 +962,7 @@
         </div>
         <div class="star-item">
           <h4>Technical Approach</h4>
-          <p>Modeled complex blade geometry in SolidWorks. Conducted Static Structural FEA to identify stress concentrations and optimized the internal spar structure. Manufactured the final assembly using rapid prototyping and composite reinforcement.</p>
+          <p>Modeled complex blade geometry in SolidWorks. Conducted Static Structural FEA to identify stress concentrations and optimized the blade and tower design. Manufactured the final assembly using rapid prototyping and composite reinforcement.</p>
         </div>
       </div>
     </div>
@@ -977,14 +977,14 @@
       <div class="star-grid">
         <div class="star-item">
           <h4>Role & Responsibility</h4>
-          <p>Worked with the R&D Innovation team to validate performance claims for prototype driver heads.</p>
+          <p>Worked with the R&D team to validate performance claims for prototype ball design.</p>
         </div>
         <div class="star-item">
           <h4>Technical Contribution</h4>
           <ul style="margin-top:5px; padding-left:20px; font-size:15px; color:var(--text);">
-            <li>Operated an industrial swing robot to conduct consistent impact testing.</li>
-            <li>Processed large datasets using Python/Matlab to correlate launch monitor data with physical design changes (CG location, face thickness).</li>
-            <li>Designed and 3D printed custom fixtures to hold club heads during measurement.</li>
+            <li>Designed and built an image acquisition system to capture high resolution images of golf balls under low light conditions improving testing efficiency by 35%.</li>
+            <li>Built a GUI and image-processing algorithm that classified pass/fail outcomes with ∼95% accuracy, and accurately identified the mode of failure, helping to directly correlate results with testing and manufacturing performance data.</li>
+            <li>Processed large datasets using Python/Matlab to correlate ball testing data with physical design changes (paint composition/application methods).</li>
           </ul>
         </div>
       </div>
@@ -995,7 +995,7 @@
     <div class="modal-content">
       <button class="close-btn" onclick="closeModal(event)">×</button>
       <h2 style="margin-bottom: 5px;">Formula Electric (FSAE)</h2>
-      <p style="color:var(--brand); font-weight:600; margin-bottom:20px;">Mechanical Design Team</p>
+      <p style="color:var(--brand); font-weight:600; margin-bottom:20px;">Vehicle Dynamics Team</p>
 
       <div class="star-grid">
         <div class="star-item">
@@ -1005,9 +1005,9 @@
         <div class="star-item">
           <h4>Technical Contribution</h4>
           <ul style="margin-top:5px; padding-left:20px; font-size:15px; color:var(--text);">
-            <li><b>High Voltage Accumulator:</b> Assisted in the mechanical packaging and thermal management design of the battery pack.</li>
-            <li><b>Chassis:</b> Modeled mounting brackets and structural members in SolidWorks, performing FEA to ensure compliance with strict SAE safety regulations.</li>
-            <li><b>Manufacturing:</b> Machined components (Mill/Lathe) and managed assembly of the rear subframe.</li>
+            <li><b>Steering System</b> Led the research and design of the steering assembly, reducing weight by ∼25% and play in the system by 3° while ensuring manufacturability (DFM) for CNC machining and 3D printing</li>
+            <li><b>Testing:</b> Modeled steering system in SolidWorks, performing FEA to ensure compliance with strict SAE safety regulations and expected forces while racing. Also integrated high-resolution sensors into the vehicle architecture, validating data acquisition precision (0.2°) to support the vehicle’s dynamic control model.</li>
+            <li><b>Manufacturing:</b> Machined components (Mill/Lathe/WaterJet/Laser cut/3D printed) and managed assembly of the steering system and part of the suspension system.</li>
           </ul>
         </div>
       </div>
