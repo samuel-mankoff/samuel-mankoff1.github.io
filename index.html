@@ -74,6 +74,56 @@
       margin-bottom: 30px;
     }
 
+    /* Skills Section Styles */
+    .skills-section {
+      padding: 20px 0 60px; /* Spacing */
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* 4 Columns */
+      gap: 24px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: var(--shadow);
+    }
+    
+    .skill-category h4 {
+      color: var(--brand);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin: 0 0 16px;
+      font-weight: 700;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+    }
+    
+    .skill-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .skill-list li {
+      font-size: 14px;
+      color: var(--text);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 500;
+    }
+    
+    /* Make it responsive: 2 columns on tablet, 1 on mobile */
+    @media (max-width: 900px) {
+      .skills-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 600px) {
+      .skills-grid { grid-template-columns: 1fr; }
+    }
+
     /* Grid Layout */
     .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
     .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
@@ -389,6 +439,59 @@
       </div>
     </div>
   </section> -->
+
+
+  <section class="skills-section">
+    <div class="wrap">
+      <div class="skills-grid">
+        
+        <div class="skill-category">
+          <h4>Mechanical Design</h4>
+          <ul class="skill-list">
+            <li>SolidWorks / CAD</li>
+            <li>GD&T & DFM</li>
+            <li>Rapid Prototyping</li>
+            <li>Finite Element Analysis</li>
+            <li>Mechatronic Integration</li>
+          </ul>
+        </div>
+
+        <div class="skill-category">
+          <h4>Dynamics & Control</h4>
+          <ul class="skill-list">
+            <li>Model Predictive Control</li>
+            <li>State Estimation (Kalman)</li>
+            <li>System Identification</li>
+            <li>Trajectory Optimization</li>
+            <li>PID Tuning</li>
+          </ul>
+        </div>
+
+        <div class="skill-category">
+          <h4>Software & Compute</h4>
+          <ul class="skill-list">
+            <li>Python & C++</li>
+            <li>ROS 2 / Linux</li>
+            <li>MATLAB / Simulink</li>
+            <li>Embedded (ESP32/STM32)</li>
+            <li>Git & CI/CD</li>
+          </ul>
+        </div>
+
+        <div class="skill-category">
+          <h4>Simulation</h4>
+          <ul class="skill-list">
+            <li>MuJoCo / PyBullet</li>
+            <li>Ansys Fluent (CFD)</li>
+            <li>Abaqus (FEA)</li>
+            <li>Gazebo</li>
+            <li>Simulink Multibody</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
 
   <section id="projects">
     <div class="wrap">
